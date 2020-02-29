@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "vscode 插件 markdown-schedule-snippet"
+title:  "vscode 插件 markdown-schedule-snippet 做了一些的修改工作呀"
 categories: JavaScript
 tags: 效率 vscode markdown
 author: HyG
