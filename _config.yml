@@ -7,7 +7,7 @@
 
 # Site settings
 title: Jiacheng's Website
-brief-intro: Front-end Dev Engineer
+brief-intro: Deep learning Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jiacheng.website" # the base hostname & protocol for your site
 
