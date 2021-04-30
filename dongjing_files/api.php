@@ -1,0 +1,1 @@
+$('#todaydowns').html('1');$('#weekdowns').html('1');$('#monthdowns').html('4');$('#hits').html('206');
