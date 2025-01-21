@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT-TCM Assistant</title>
+    <link rel="icon" type="image/png" href="./bencao/logo.png">
+    <link rel="stylesheet" href="./bencao/styles.css">
+    <script src="./bencao/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">    
+            <ul>
+                <div class="logo">
+                    <img src="./bencao/logo.png" alt="BenCao Logo" class="site-logo">
+                </div>
+                <li><a href="#knowledge">TCM Knowledge</a></li>
+                <li><a href="#treatment">Symptoms & Herbs</a></li>
+                <li><a href="#wellness">Wellness Advice</a></li>
+                <li><a href="#diet">Dietary Therapy</a></li>
+                <li><a href="#tongue">Tongue & Health</a></li>
+            </ul>
+        </nav>
+        <h1>BenCao: TCM Assistant</h1>
+        <p>Welcome to the GPT-TCM Assistant, your companion for Traditional Chinese Medicine (TCM) insights. This platform integrates advanced AI with TCM principles to provide personalized diagnosis, treatment suggestions, and educational resources.</p> 
+    </header>
+
+    <main>
+        <section id="knowledge" style="margin-bottom: 0; padding-bottom: 0;">
+            <h2>TCM Knowledge Base</h2>
+            <p>Explore the fundamental principles of Traditional Chinese Medicine:</p>
+            <ol>
+                <li><strong>Basic Theories:</strong> Understanding of Yin-Yang balance, Five Elements, and the roles of different organs in TCM.</li>
+                <li><strong>Diagnostic Methods:</strong> Traditional approaches including observation, listening, questioning, and pulse-taking.</li>
+                <li><strong>Treatment Principles:</strong> Overview of various treatment methods and their applications in TCM.</li>
+                <li><strong>Herbal Medicine:</strong> Introduction to common herbs and classical formulas used in TCM practice.</li>
+            </ol>
+        </section>
+
+        <section id="treatment" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;">
+            <h2 style="margin-top: 0;">Symptoms & Herbs</h2>
+            <p>Match your symptoms with traditional Chinese herbs and formulas:</p>
+            <div class="treatment-grid">
+                <div class="symptoms-panel">
+                    <h3>Common Symptoms</h3>
+                    <ul>
+                        <li>Respiratory Issues (呼吸道症状)</li>
+                        <li>Digestive Problems (消化道症状)</li>
+                        <li>Sleep Disorders (睡眠问题)</li>
+                        <li>Pain & Inflammation (疼痛炎症)</li>
+                    </ul>
+                </div>
+                <div class="herbs-panel">
+                    <h3>Related Herbs</h3>
+                    <ul>
+                        <li>Single Herbs (单味药)</li>
+                        <li>Classical Formulas (经方)</li>
+                        <li>Modern Combinations (现代方剂)</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="treatment-result">
+                <p>Select your symptoms above to view matching herbs and formulas.</p>
+            </div>
+        </section>
+
+        <section id="wellness" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;">
+            <h2 style="margin-top: 0;">Wellness Advice</h2>
+            <p>Discover traditional Chinese wellness practices for maintaining health and harmony in daily life:</p>
+            <ul>
+                <li><strong>Dietary Wisdom (饮食养生)</strong>
+                    <ul>
+                        <li>Seasonal eating guidelines</li>
+                        <li>Food properties and combinations</li>
+                        <li>Therapeutic diet recommendations</li>
+                    </ul>
+                </li>
+                <li><strong>Exercise & Qigong (运动气功)</strong>
+                    <ul>
+                        <li>Traditional exercise methods</li>
+                        <li>Breathing techniques</li>
+                        <li>Meditation practices</li>
+                    </ul>
+                </li>
+                <li><strong>Lifestyle Balance (起居养生)</strong>
+                    <ul>
+                        <li>Daily rhythm optimization</li>
+                        <li>Seasonal lifestyle adjustments</li>
+                        <li>Sleep and rest guidelines</li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="wellness-tips">
+                <p>Select a category above to receive personalized wellness recommendations based on TCM principles.</p>
+            </div>
+        </section>
+
+        <section id="diet" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;">
+            <h2 style="margin-top: 0;">Dietary Therapy</h2>
+            <p>Explore traditional Chinese dietary principles and therapeutic food recommendations:</p>
+            <div class="diet-grid">
+                <div class="food-nature">
+                    <h3>Food Properties (食物性质)</h3>
+                    <ul>
+                        <li>Warming Foods (温性食物)</li>
+                        <li>Cooling Foods (凉性食物)</li>
+                        <li>Neutral Foods (平性食物)</li>
+                        <li>Seasonal Foods (时令食物)</li>
+                    </ul>
+                </div>
+                <div class="therapeutic-diet">
+                    <h3>Therapeutic Applications (食疗应用)</h3>
+                    <ul>
+                        <li>Digestive Health (消化调理)</li>
+                        <li>Energy Boost (补气养血)</li>
+                        <li>Immune Support (增强免疫)</li>
+                        <li>Sleep & Relaxation (安神助眠)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cooking-methods">
+                <h3>Preparation Methods (烹饪方法)</h3>
+                <ul>
+                    <li>Seasonal Cooking Tips</li>
+                    <li>Beneficial Combinations</li>
+                    <li>Cooking Techniques</li>
+                </ul>
+            </div>
+            <div id="diet-recommendations">
+                <p>Select your health goals to receive personalized dietary recommendations.</p>
+            </div>
+        </section>
+
+        <section id="tongue" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">
+            <h2 style="margin-top: 0;">Tongue Diagnosis</h2>
+            <p>Explore the relationship between tongue appearance and health conditions in TCM:</p>
+            <div class="tongue-grid">
+                <div class="tongue-features">
+                    <h3>Tongue Characteristics</h3>
+                    <ul>
+                        <li>Tongue Color (舌色)
+                            <ul>
+                                <li>Pale (淡白)</li>
+                                <li>Red (红色)</li>
+                                <li>Purple (紫色)</li>
+                            </ul>
+                        </li>
+                        <li>Tongue Coating (舌苔)
+                            <ul>
+                                <li>White (白苔)</li>
+                                <li>Yellow (黄苔)</li>
+                                <li>None (无苔)</li>
+                            </ul>
+                        </li>
+                        <li>Tongue Shape (舌形)
+                            <ul>
+                                <li>Swollen (胖大)</li>
+                                <li>Thin (瘦薄)</li>
+                                <li>Cracked (裂纹)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="health-implications">
+                    <h3>Health Indications</h3>
+                    <p>Select tongue features above to view corresponding health implications and TCM diagnoses.</p>
+                </div>
+            </div>
+            <div id="tongue-analysis">
+                <p>Upload or describe your tongue condition for personalized TCM analysis.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GPT-TCM Assistant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
