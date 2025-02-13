@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +7,32 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Use Open Sans for body text and Montserrat for headings */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #E4E5D5;
   color: #324E35;
   text-align: center;
   overflow-x: hidden;
 }
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
 .navbar {
   width: 100%;
   height: 70px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
+  justify-content: space-between;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,12 +41,12 @@ body {
 }
 .nav-logo {
   height: 40px;
-  margin-bottom: 5px;
 }
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin: 0;
 }
 .nav-links a {
   text-decoration: none;
@@ -45,6 +57,22 @@ body {
 .nav-links a:hover {
   color: #8EA98A;
 }
+
+/* Hamburger Toggle (hidden on desktop) */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #E4E5D5;
+  transition: all 0.3s;
+}
+
+/* Hero Section */
 .hero {
   width: 100%;
   height: 100vh;
@@ -58,8 +86,10 @@ body {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(130, 169, 138, 0.3);
   z-index: 1;
 }
@@ -74,13 +104,11 @@ body {
   margin-bottom: 20px;
   line-height: 1.2;
 }
-.hero-content h1 span {
-  color: #8EA98A;
-}
 .hero-content p {
-  font-size: 1.1rem;
   margin-bottom: 30px;
 }
+
+/* Button */
 .btn-hero {
   display: inline-block;
   background-color: #324E35;
@@ -95,6 +123,8 @@ body {
   background-color: #8EA98A;
   color: #324E35;
 }
+
+/* Section Padding & Titles */
 .section-padding {
   padding: 80px 20px;
   max-width: 1200px;
@@ -103,6 +133,8 @@ body {
 .section-title {
   margin-bottom: 50px;
 }
+
+/* Portfolio & Other Section Styles */
 .portfolio-grid {
   display: grid;
   place-items: center;
@@ -164,12 +196,16 @@ body {
 .social-links a:hover {
   color: #8EA98A;
 }
+
+/* Footer */
 .footer {
   text-align: center;
   padding: 20px;
   background-color: #324E35;
   color: #E4E5D5;
 }
+
+/* Fade-In Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -178,4 +214,63 @@ body {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .nav-logo {
+    height: 30px;
+  }
+  
+  /* Display hamburger toggle on mobile */
+  .nav-toggle {
+    display: block;
+  }
+  
+  /* Hide navigation links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Show nav-links when active (toggled) */
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    width: 100%;
+  }
+  .nav-links a {
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    margin-top: 100px; /* Adjust top margin to account for expanded navbar */
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  /* Ensure images are responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

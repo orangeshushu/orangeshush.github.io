@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Fade-in animation using IntersectionObserver
   const faders = document.querySelectorAll('.fade-in');
   const options = {
     root: null,
@@ -16,3 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   faders.forEach(fader => appearOnScroll.observe(fader));
 });
+
+// Toggle function for the hamburger menu on mobile
+function toggleNav() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
